@@ -1,8 +1,7 @@
+//Denzel Don L. Sala
 package SimpleCalc;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class SimpleCalcGUI extends JFrame{
 
@@ -14,45 +13,42 @@ public class SimpleCalcGUI extends JFrame{
     private JTextField lblResult;
 
 public SimpleCalcGUI() {
-    btnCompute.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
+    btnCompute.addActionListener(e -> {
 
-        try {
+    try {
 
-            int a;
-            int b;
-            int result;
+        int a;
+        int b;
+        int result;
 
-            a = Integer.parseInt(tfNumber1.getText());
-            b = Integer.parseInt(tfNumber2.getText());
+        a = Integer.parseInt(tfNumber1.getText());
+        b = Integer.parseInt(tfNumber2.getText());
 
-            if (cbOperations.getSelectedItem().equals("+")) {
-                result = (Integer.parseInt(tfNumber1.getText()) + Integer.parseInt(tfNumber2.getText()));
-                lblResult.setText(Integer.toString(result));
+        if (cbOperations.getSelectedItem().equals("+")) {
+            result = (Integer.parseInt(tfNumber1.getText()) + Integer.parseInt(tfNumber2.getText()));
+            lblResult.setText(Integer.toString(result));
 
 
-            } else if (cbOperations.getSelectedItem().equals("-")) {
-                result = (Integer.parseInt(tfNumber1.getText()) - Integer.parseInt(tfNumber2.getText()));
-                lblResult.setText(Integer.toString(result));
+        } else if (cbOperations.getSelectedItem().equals("-")) {
+            result = (Integer.parseInt(tfNumber1.getText()) - Integer.parseInt(tfNumber2.getText()));
+            lblResult.setText(Integer.toString(result));
 
 
-            } else if (cbOperations.getSelectedItem().equals("*")) {
-                result = (Integer.parseInt(tfNumber1.getText()) * Integer.parseInt(tfNumber2.getText()));
-                lblResult.setText(Integer.toString(result));
+        } else if (cbOperations.getSelectedItem().equals("*")) {
+            result = (Integer.parseInt(tfNumber1.getText()) * Integer.parseInt(tfNumber2.getText()));
+            lblResult.setText(Integer.toString(result));
 
 
-            } else if (cbOperations.getSelectedItem().equals("/")) {
-                result = (Integer.parseInt(tfNumber1.getText()) / Integer.parseInt(tfNumber2.getText()));
-                lblResult.setText(Integer.toString(result));
-            }
-        } catch (Exception c) {
-
-            JOptionPane.showMessageDialog(null, "Please enter a number");
-
+        } else if (cbOperations.getSelectedItem().equals("/")) {
+            result = (Integer.parseInt(tfNumber1.getText()) / Integer.parseInt(tfNumber2.getText()));
+            lblResult.setText(Integer.toString(result));
         }
-        
-        }
+    } catch (Exception c) {
+
+        JOptionPane.showMessageDialog(null, "Please enter a number");
+
+    }
+
     });
 }
 

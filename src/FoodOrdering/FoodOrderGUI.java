@@ -1,3 +1,4 @@
+//Denzel Don L. Sala
 package FoodOrdering;
 
 import javax.swing.*;
@@ -71,31 +72,31 @@ try {
 
     if (rbNone.isSelected()) {
 
-        JOptionPane.showMessageDialog(null, String.format("The total price is %.2f", sum));
+        JOptionPane.showMessageDialog(null, String.format("The total price is Php %.2f", sum));
 
     } else if (rb5.isSelected()) {
 
         discount = (sum * 5) / 100;
         total = sum - discount;
 
-        JOptionPane.showMessageDialog(null, String.format("The total price is %.2f", total));
+        JOptionPane.showMessageDialog(null, String.format("The total price is Php %.2f", total));
 
     } else if (rb10.isSelected()) {
 
         discount = (sum * 10) / 100;
         total = sum - discount;
 
-        JOptionPane.showMessageDialog(null, String.format("The total price is %.2f", total));
+        JOptionPane.showMessageDialog(null, String.format("The total price is Php %.2f", total));
     } else if (rb15.isSelected()) {
 
         discount = (sum * 15) / 100;
         total = sum - discount;
 
-        JOptionPane.showMessageDialog(null, String.format("The total price is %.2f", total));
+        JOptionPane.showMessageDialog(null, String.format("The total price is Php %.2f", total));
 
     }
 
-} catch (Exception g) {
+} catch (Exception h) {
 
     JOptionPane.showMessageDialog(null, "Invalid Input");
 }

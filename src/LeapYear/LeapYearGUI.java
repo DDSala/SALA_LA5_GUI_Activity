@@ -1,3 +1,4 @@
+//Denzel Don L. Sala
 package LeapYear;
 
 import javax.swing.*;
@@ -15,15 +16,15 @@ public LeapYearGUI() {
 
         try {
 
-            int year;
+            int yr;
 
-            year = Integer.parseInt(tfYear.getText());
+            yr = Integer.parseInt(tfYear.getText());
 
-            if (year % 400 == 0) {
+            if (yr % 400 == 0) {
                 JOptionPane.showMessageDialog(btnCheckYear, "Leap year");
-            } else if (year % 100 == 0) {
+            } else if (yr % 100 == 0) {
                 JOptionPane.showMessageDialog(btnCheckYear, "Not a leap year");
-            } else if (year % 4 == 0) {
+            } else if (yr % 4 == 0) {
                 JOptionPane.showMessageDialog(btnCheckYear, "Leap year");
             } else {
                 JOptionPane.showMessageDialog(btnCheckYear, "Not a leap year");
