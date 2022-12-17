@@ -57,6 +57,7 @@ public SimpleCalcGUI() {
 
 
     public static void main(String[] args) {
+
         SimpleCalcGUI cal = new SimpleCalcGUI();
 
         cal.setContentPane(cal.panel1);

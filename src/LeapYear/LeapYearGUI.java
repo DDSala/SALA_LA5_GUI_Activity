@@ -45,6 +45,6 @@ public LeapYearGUI() {
         leap.setVisible(true);
         leap.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        leap.tfYear.setText("");
+        leap.tfYear.setText(" ");
     }
 }

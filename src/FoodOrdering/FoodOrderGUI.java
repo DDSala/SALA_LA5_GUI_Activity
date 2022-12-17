@@ -95,7 +95,8 @@ try {
     }
 
 } catch (Exception g) {
-    JOptionPane.showMessageDialog(null, "Bruh");
+
+    JOptionPane.showMessageDialog(null, "Invalid Input");
 }
 
 
