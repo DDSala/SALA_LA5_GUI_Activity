@@ -51,6 +51,7 @@ public SimpleCalcGUI() {
             JOptionPane.showMessageDialog(null, "Please enter a number");
 
         }
+        
         }
     });
 }
